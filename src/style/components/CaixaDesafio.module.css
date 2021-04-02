@@ -1,0 +1,88 @@
+.CaixaDesafioContainer{
+    height: 100%;
+    background-color: var(--white);
+    border-radius: 5px;
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.05) ;
+    padding: 1.5rem 2rem;
+    display:  flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+}
+.caixaDesafioNotActive{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.caixaDesafioNotActive strong{
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+.caixaDesafioNotActive p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.4;
+    max-width: 70%;
+    margin-top: 3rem;
+}
+.caixaDesafioNotActive p img{
+    margin-bottom: 1rem;
+}
+.caixaDesafioAtivo{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.caixaDesafioAtivo header{
+    color: var(--blue);
+    font-weight: 600;
+    font-size: 1.25rem;
+    padding: 0 2rem 1rem;
+    border-bottom: 1px solid var(--gray-line);
+}
+.caixaDesafioAtivo main{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.caixaDesafioAtivo main strong{
+ font-size: 2rem;
+ font-weight: 600;
+ color: var(--title);
+ margin:  1.5rem 0;
+}
+.caixaDesafioAtivo main p{
+    line-height:1.5 ;
+}
+.caixaDesafioAtivo footer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.caixaDesafioAtivo footer button{
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    border-radius: 5px;
+    color:var(--white);
+    font-size: 1rem;
+    font-weight: 600;
+    transition: filter 0.2s;
+}
+.caixaDesafioAtivo footer button.falheiButton{
+    background: var(--red);
+}
+.caixaDesafioAtivo footer button.completeiButton{
+    background-color: var(--green);
+}
+.caixaDesafioAtivo footer button:hover{
+    filter: brightness(0.9);
+}
